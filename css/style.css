@@ -28,9 +28,17 @@ body {
     display: flex;
 }
 
+.btn {
+    color: #fff;
+    font-weight: 700;
+    background: var(--orange-color);
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
 /* header style start */
 header {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .header {
@@ -58,4 +66,78 @@ header {
 
 .nav_bar a:hover {
     color: var(--orange-color);
+}
+
+/* banner style */
+
+.banner {
+    background-image: linear-gradient(rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)), url(../Images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 500px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.banner p {
+    color: #fff;
+    max-width: 680px;
+    margin: 0 auto 50px;
+}
+
+.filter_from {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.filter_from form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filter_from form input,
+select,
+.find_btn {
+    padding: 15px 8px;
+    border: none;
+    width: 25%;
+    cursor: pointer;
+    /* Arrow */
+    appearance: none;
+    background-image: url(../Images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1.1rem auto;
+    border-radius: 8px;
+    width: 175px;
+}
+
+.filter_from form input,
+.find_btn {
+    background-image: none;
+}
+
+.filter_from form input,
+select,
+.find_btn::placeholder {
+    color: var(--secondary-color);
+}
+
+.filter_from form input,
+select,
+.find_btn:focus {
+    outline: none;
 }
