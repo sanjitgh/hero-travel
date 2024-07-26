@@ -10,6 +10,11 @@
     --orange-color: #FF5400;
 }
 
+::selection{
+    background-color: var(--orange-color);
+    color: #fff;
+}
+
 body {
     font-family: "Mulish", sans-serif;
 }
@@ -34,6 +39,13 @@ body {
     background: var(--orange-color);
     cursor: pointer;
     padding: 12px 25px;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+section {
+    padding: 50px 0;
 }
 
 /* header style start */
@@ -123,6 +135,8 @@ select,
     background-size: 1.1rem auto;
     border-radius: 8px;
     width: 175px;
+    font-weight: normal;
+    font-size: inherit;
 }
 
 .filter_from form input,
@@ -140,4 +154,57 @@ select,
 select,
 .find_btn:focus {
     outline: none;
+}
+
+.find_btn svg {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* popular tour style */
+.tour {}
+
+.tour_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour_left_item {
+    width: 50%;
+}
+
+.tour_left_item h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+}
+
+.tour_left_item p {
+    color: var(--secondary-color);
+}
+
+.tour_list {
+    margin: 24px 0;
+}
+
+.tour_list li {
+    color: var(--secondary-color);
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.tour_button_space {
+    margin-bottom: 2rem;
+}
+
+.tour_right_item {
+    width: 50%;
+    text-align: end;
+}
+
+
+.tour_right_item img {
+    max-width: 540px;
 }
