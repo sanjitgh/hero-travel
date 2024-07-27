@@ -81,6 +81,9 @@ header {
 }
 
 /* banner style */
+.hero{
+    padding: 0;
+}
 
 .banner {
     background-image: linear-gradient(rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)), url(../Images/banner.png);
@@ -162,6 +165,9 @@ select,
 }
 
 /* popular tour style */
+.tour{
+    padding-top: 100px;
+}
 
 .tour_container {
     display: flex;
@@ -308,4 +314,75 @@ select,
 
 .choose_box p {
     color: #5A5A5D;
+}
+
+/* Deals & Discounts style */
+
+.deal_wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 55px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.deal_item_one{
+    background-image: url(../images/Group\ 39.png);
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.deal_item_two{
+    background-image: url(../images/Group\ 39.png);
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.deal_item_three{
+    background-image: url(../images/Group\ 40.png);
+    justify-content: end;
+}
+
+.deal_content {
+    max-width: 580px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.deal_content ul {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.deal_content li {
+    list-style: none;
+    color: #5A5A5D;
+}
+
+.deal_content i {
+    color: var(--orange-color);
+    width: 20px;
+    margin-right: 5px;
+}
+
+.deal_content h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.deal_content p {
+    color: #5A5A5D;
+    margin-bottom: 1rem;
+    line-height: 26px;
+}
+
+.deal_content h4 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: var(--orange-color);
 }
