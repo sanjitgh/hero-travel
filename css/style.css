@@ -81,7 +81,7 @@ header {
 }
 
 /* banner style */
-.hero{
+.hero {
     padding: 0;
 }
 
@@ -165,7 +165,7 @@ select,
 }
 
 /* popular tour style */
-.tour{
+.tour {
     padding-top: 100px;
 }
 
@@ -193,7 +193,8 @@ select,
     margin: 24px 0;
 }
 
-.tour_list li {
+.tour_list li,
+.place_left_item li {
     color: var(--secondary-color);
     line-height: 28px;
     margin-bottom: 10px;
@@ -282,7 +283,6 @@ select,
 }
 
 .choose_container {
-    display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
@@ -327,19 +327,19 @@ select,
     display: flex;
 }
 
-.deal_item_one{
+.deal_item_one {
     background-image: url(../images/Group\ 39.png);
     justify-content: end;
     margin-bottom: 20px;
 }
 
-.deal_item_two{
+.deal_item_two {
     background-image: url(../images/Group\ 39.png);
     justify-content: start;
     margin-bottom: 20px;
 }
 
-.deal_item_three{
+.deal_item_three {
     background-image: url(../images/Group\ 40.png);
     justify-content: end;
 }
@@ -352,7 +352,6 @@ select,
 }
 
 .deal_content ul {
-    display: flex;
     gap: 25px;
     margin-bottom: 25px;
 }
@@ -365,7 +364,6 @@ select,
 .deal_content i {
     color: var(--orange-color);
     width: 20px;
-    margin-right: 5px;
 }
 
 .deal_content h3 {
@@ -374,7 +372,8 @@ select,
     margin-bottom: 1rem;
 }
 
-.deal_content p {
+.deal_content p,
+.place_left_item p {
     color: #5A5A5D;
     margin-bottom: 1rem;
     line-height: 26px;
@@ -385,4 +384,49 @@ select,
     font-weight: 800;
     margin-bottom: 25px;
     color: var(--orange-color);
+}
+
+/* perfect place */
+.place_container {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.place_left_item {
+    width: 50%;
+}
+
+.place_left_item h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 60px;
+}
+
+.place_left_item li {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.btn_place {
+    margin-top: 20px;
+}
+
+.place_right_item {
+    width: 50%;
+    position: relative;
+}
+
+.place_right_item h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 36px;
+}
+
+.place_right_item video {
+    border-radius: 16px;
 }
