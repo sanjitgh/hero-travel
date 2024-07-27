@@ -352,18 +352,22 @@ select,
 }
 
 .deal_content ul {
-    gap: 25px;
+    gap: 30px;
     margin-bottom: 25px;
 }
 
 .deal_content li {
     list-style: none;
     color: #5A5A5D;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
 
 .deal_content i {
     color: var(--orange-color);
-    width: 20px;
+    font-size: 20px;
 }
 
 .deal_content h3 {
@@ -432,6 +436,10 @@ select,
 }
 
 /* Newsletter style */
+.newsletter {
+    padding-bottom: 100px;
+}
+
 .newsletter_contaier {
     display: grid;
     grid-template-columns: 1.2fr 1.8fr;
@@ -513,4 +521,61 @@ select,
 .newsl_tag h5 {
     font-size: 2rem;
     font-weight: 800;
+}
+
+/* footer style */
+
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 110px 0;
+}
+
+footer p {
+    max-width: 770px;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 2rem;
+}
+
+.footer_logo {
+    max-width: 240px;
+    margin: 0 auto 15px;
+}
+
+.footer_socail_icons {
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.footer_socail_icons li {
+    list-style: none;
+}
+
+.footer_socail_icons a {
+    color: var(--primary-color);
+}
+
+.footer_socail_icons i {
+    font-size: 1.5rem;
+    transition: color .2s ease-out;
+}
+
+.footer_socail_icons i:hover {
+    color: var(--orange-color);
+}
+
+.hr_bar {
+    background-color: rgba(19, 19, 24, 0.1);
+    display: block;
+    max-width: 900px;
+    padding: 0 30px;
+    height: 1px;
+    margin: 0 auto 50px;
+
+}
+
+.copy span {
+    color: var(--primary-color);
 }
