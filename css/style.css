@@ -162,7 +162,6 @@ select,
 }
 
 /* popular tour style */
-.tour {}
 
 .tour_container {
     display: flex;
@@ -204,7 +203,61 @@ select,
     text-align: end;
 }
 
-
 .tour_right_item img {
     max-width: 540px;
+}
+
+/* Destination */
+.section_header {
+    text-align: center;
+}
+.section_header h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+.section_header p{
+    color: var(--secondary-color);
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+}
+.destination_first_row ,
+.destination_secound_row ,
+.destination_third_row
+{
+    display: grid;
+    gap: 25px;
+}
+.destination_first_row img,
+.destination_secound_row img,
+.destination_third_row img{
+   height: 300px;
+}
+
+.destination_first_row{
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+
+}
+
+.destination_secound_row{
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    margin-bottom: 25px;
+}
+.destination_third_row{
+    grid-template-columns: 1.2fr 1.8fr;
+}
+
+.place_one_container{
+    position: relative;
+}
+.place_name{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 800;
 }
