@@ -1,0 +1,141 @@
+@media screen and (max-width:1440px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    .tour_right_item img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        width: 200px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .place_container {
+        align-items: center;
+    }
+
+    .newsl_tag {
+        bottom: 180px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .filter_from form,
+    .tour_container,
+    .choose_container,
+    .place_container {
+        flex-direction: column;
+    }
+
+    .filter_from form input,
+    select,
+    .find_btn,
+    .tour_left_item,
+    .tour_right_item,
+    .place_left_item,
+    .place_right_item,
+    .deal_content ul li:first-child {
+        width: 100%;
+    }
+
+    .destination_first_row,
+    .destination_secound_row,
+    .destination_third_row,
+    .newsletter_contaier {
+        grid-template-columns: 1fr;
+    }
+
+    .filter_from form input[type=text] {
+        width: calc(100% - 16px);
+    }
+
+    nav.nav_bar {
+        display: none;
+    }
+
+    .hamburger_icon {
+        display: block;
+    }
+
+    .hamburger_icon i {
+        color: var(--orange-color);
+        font-size: 1.8rem;
+    }
+
+    .filter_from {
+        margin: 0 15px 30px;
+    }
+
+    .tour_container {
+        gap: 40px;
+    }
+
+    .banner h1,
+    .section_header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .banner p {
+        padding: 0 10px;
+    }
+
+    .choose_box {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .newsl_right_item img {
+        height: 370px;
+    }
+
+    .newsl_tag h6 {
+        font-size: 1.2rem;
+    }
+
+    .newsl_tag h5 {
+        font-size: 1.6rem;
+    }
+
+    .newsl_tag {
+        bottom: 58px;
+    }
+
+    .deal_item_one,
+    .deal_item_two,
+    .deal_item_three {
+        justify-content: center;
+    }
+
+    .deal_content {
+        padding: 30px;
+    }
+
+    .deal_wrapper {
+        padding: 100px 30px 20px;
+    }
+
+    .place_left_item h1 {
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+
+    .deal_content li {
+        justify-content: start;
+    }
+
+    .newsletter {
+        padding-bottom: 50px;
+    }
+}
