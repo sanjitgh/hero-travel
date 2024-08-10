@@ -336,19 +336,19 @@ select,
 }
 
 .deal_item_one {
-    background-image: url(../images/Group\ 39.png);
+    background-image: url(../Images/Group\ 39.png);
     justify-content: end;
     margin-bottom: 20px;
 }
 
 .deal_item_two {
-    background-image: url(../images/Group\ 39.png);
+    background-image: url(../Images/Group\ 39.png);
     justify-content: start;
     margin-bottom: 20px;
 }
 
 .deal_item_three {
-    background-image: url(../images/Group\ 40.png);
+    background-image: url(../Images/Group\ 40.png);
     justify-content: end;
 }
 
